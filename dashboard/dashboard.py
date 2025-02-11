@@ -30,7 +30,7 @@ def create_apa(day_df):
     return jumlah_perhari_df, heatmap_df
 
 #Membaca day_df.csv
-day_df = pd.read_csv("day_df.csv")
+day_df = pd.read_csv("dashboard/day_df.csv")
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 day_df.sort_values(by="dteday", inplace=True)
 day_df.reset_index(drop=True, inplace=True)
