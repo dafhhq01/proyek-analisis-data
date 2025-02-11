@@ -49,7 +49,7 @@ min_date = day_df["dteday"].min()
 max_date = day_df["dteday"].max()
 
 with st.sidebar:
-    st.image("https://raw.githubusercontent.com/dafhhq01/proyek-analisis-data/main/dashboard/icon.png")
+    st.image("dashboard/icon.png")
     start_date, end_date = st.date_input(
         label='Rentang Waktu',
         min_value=min_date,
